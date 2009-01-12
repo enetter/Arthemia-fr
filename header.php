@@ -16,8 +16,8 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 
-<link rel="icon" href="<?php echo get_option('home'); ?>/wp-content/themes/arthemia/images/favicon.ico" />
-<link rel="shortcut icon" href="<?php echo get_option('home'); ?>/wp-content/themes/arthemia/images/favicon.ico" />
+<link rel="icon" href="<?php echo get_option('home'); ?>/wp-content/themes/arthemia-fr/images/favicon.ico" />
+<link rel="shortcut icon" href="<?php echo get_option('home'); ?>/wp-content/themes/arthemia-fr/images/favicon.ico" />
 
 <?php wp_head(); ?>
 
@@ -27,7 +27,7 @@
 	<div id="pages" class="right">
 		<ul id="navpage-bar" class="clearfloat">
 		<li>&nbsp;</li>
-		<li><a href="<?php echo get_option('home'); ?>/">Accueil</a></li>
+		
 		<?php wp_list_pages('sort_column=menu_order&title_li='); ?>
 		</ul>
 	</div>
