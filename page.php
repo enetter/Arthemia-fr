@@ -17,7 +17,7 @@
 
 		</div>
 		
-	<?php edit_post_link('Modifier cet article.', '<p>', '</p>'); ?>
+	<?php edit_post_link('Modifier cette page.', '<p>', '</p>'); ?>
 
 	</div>
 		

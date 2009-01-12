@@ -19,7 +19,7 @@ http://www.opensource.org/licenses/gpl-license.php
 
 body {
 	font: 100% Arial, Helvetica;
-	background: #FFF;
+	background: #777;
 	color: #333;
 	}
 
@@ -848,7 +848,7 @@ li.my_comment cite strong {
 	font-size:0.7em;
 	color:#fff;
 	width: 940px;
-	background:#2c2c2c url(images/bottombar.png) bottom no-repeat;
+	background:#2c2c2c;
 	margin: 0 auto;
 	padding:10px;
 	}
@@ -897,12 +897,22 @@ li.my_comment cite strong {
 
 
 #footer {
+	text-align: center;
 	margin: 0 auto;
 	width: 960px;
 	font-size:0.6em;
 	padding-top:10px;
 	padding-bottom:10px;
+	color: #eee;
 	}
+
+#footer a {
+	color: #eee;
+}
+#footer a :hover {
+	background: #eee;
+	color:#222;
+}
 
 
 /* Float Properties*/

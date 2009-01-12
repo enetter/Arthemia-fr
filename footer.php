@@ -28,7 +28,7 @@
 </div>
 </div>
 
-<div id="footer"> <?php wp_footer(); ?> Propuls&eacute; par <a href="http://wordpress.org/">WordPress</a> | <?php if ( is_user_logged_in() ) { ?> <?php wp_register('', ''); ?> | <?php } ?> <?php wp_loginout(); ?> | <a href="<?php bloginfo('rss2_url'); ?>">Articles (RSS)</a> | <a href="<?php bloginfo('comments_rss2_url'); ?>">Commentaires (RSS)</a> | <a href="http://michaelhutagalung.com/2008/05/arthemia-magazine-blog-wordpress-theme-released/" target="_blank">Arthemia</a> un th&egrave;me par <a href="http://michaelhutagalung.com" target="_blank">Michael Hutagalung</a> traduit par <a href="http://www.cplusn.com" target="_blank">Emmanuel Netter</a>
+<div id="footer"> <?php wp_footer(); ?> Propuls&eacute; par <a href="http://wordpress.org/">WordPress</a> | <a href="<?php bloginfo('rss2_url'); ?>">Articles (RSS)</a> | <a href="<?php bloginfo('comments_rss2_url'); ?>">Commentaires (RSS)</a> | <a href="http://code.google.com/p/arthemia-fr/" target="_blank">Arthemia-fr</a> par <a href="http://www.cplusn.com" target="_blank">Emmanuel Netter</a> bas&eacute; sur <a href="http://michaelhutagalung.com/2008/05/arthemia-magazine-blog-wordpress-theme-released/" target="_blank">Arthemia2</a> par <a href="http://michaelhutagalung.com" target="_blank">Michael Hutagalung</a>
 
 <!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
 

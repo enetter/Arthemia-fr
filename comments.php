@@ -39,10 +39,10 @@ $isByAuthor = true;
 	
 
 			<div class="commenttext">
-			<cite><strong><?php comment_author_link() ?> <?php if($isByAuthor ) { echo '(author)';} ?> </strong> said: </cite>
+			<cite><strong><?php comment_author_link() ?> <?php if($isByAuthor ) { echo '(author)';} ?> </strong> a dit: </cite>
 
 			<?php if ($comment->comment_approved == '0') : ?>
-			<em>Your comment is awaiting moderation.</em>
+			<em>Votre commentaire est en attente de mod&eacute;ration.</em>
 			<?php endif; ?>
 			<?php comment_text() ?>
 			</div>	
@@ -88,15 +88,15 @@ $isByAuthor = true;
 
 <?php else : ?>
 
-<p>Ajoutez votre commentaire ci-dessous, ou cr&eacute;ez un <a href="<?php trackback_url(true); ?>" rel="trackback">r&eacute;trolien</a> depuis votre site. Vous pouvez &eacute;galement <?php comments_rss_link('subscribe to these comments'); ?> par RSS.</p>
+<p>Ajoutez votre commentaire ci-dessous, ou cr&eacute;ez un <a href="<?php trackback_url(true); ?>" rel="trackback">r&eacute;trolien</a> depuis votre site. Vous pouvez &eacute;galement <?php comments_rss_link('souscrire &agrave; ces commentaires'); ?> par RSS.</p>
 
 <p>Merci de vous conformer &agrave la netetiquette.</p>
 
 <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" class="field" />
-<label for="author"><small>Nom <?php if ($req) echo "(required)"; ?></small></label></p>
+<label for="author"><small>Nom <?php if ($req) echo "(requis)"; ?></small></label></p>
 
 <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" class="field" />
-<label for="email"><small>Courriel (ne sera pas visible) <?php if ($req) echo "(required)"; ?></small></label></p>
+<label for="email"><small>Courriel (ne sera pas visible) <?php if ($req) echo "(requis)"; ?></small></label></p>
 
 <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" class="field" />
 <label for="url"><small>Site web (optionnel)</small></label></p>

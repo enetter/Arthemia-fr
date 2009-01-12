@@ -13,7 +13,9 @@
 	<div id="stats">
 <span><?php the_time('j F Y') ?></span>
 
-<span><?php comments_number('Pas de commentaires', 'Un commentaire', '% commentaires');?></span></div>
+<span><?php comments_number('Pas de commentaires', 'Un commentaire', '% commentaires');?></span>
+<?php edit_post_link('Modifier cet article.', '<span>', '</span>'); ?>
+</div>
 
 
 	<div class="entry clearfloat">
