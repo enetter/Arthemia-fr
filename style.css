@@ -29,13 +29,15 @@ p {
 	}
 
 a:link, a:visited {
-	color: #7E5B52;
+	color: #905F51;
+
 	text-decoration:none
 	}
 
 a:hover, a:active {
-	color: #7E5B52;
-	text-decoration:underline;
+	color:#fff;
+	background: #905F51;
+	/*text-decoration:underline;*/
 	}
 
 a img {
@@ -277,9 +279,14 @@ h4 {
 
 h3.cat_title, h3.cat_title a {
 	color:#333;
-	letter-spacing:-0.05em;
 	font-size:0.75em;
 	}
+	
+h3.cat_title a:hover {
+	background:#333;
+	color:#fff;
+	}
+
 
 h3#respond {
 	margin-top:0px;
@@ -413,7 +420,7 @@ h3.authors {
 	margin:0;
 	font-weight:bold;
 	font-size:1.5em;
-	letter-spacing:-0.05em;
+	letter-spacing:-0.005em;
 	}
 
 #front-popular h3 {
@@ -450,6 +457,11 @@ h3.authors {
 	float:left;
 	}
 
+#front-list a:hover{
+	background:#333;
+	color:#fff; 
+}
+
 #archive {
 	padding-top:15px;
 	font-size:1.05em;
@@ -463,8 +475,13 @@ h3.authors {
 #front-list .title, #archive .title {
 	font-weight:bold;
 	font:1.75em Arial;
-	letter-spacing:-0.05em;
+	letter-spacing:-0.005em;
 	}
+	
+#front-list .title a:hover, #front-list .followup a:hover{
+	background:#905F51;
+	color:#fff; 
+}
 
 #front-list .clearfloat, #archive .clearfloat {
 	padding-bottom:10px;
@@ -495,6 +512,11 @@ h3.authors {
 .meta a {
 	color:#333;
 	}
+	
+.meta a:hover {
+	color:#fff;
+	background:#333;
+	}
 
 #headline p, #featured p {
 	margin:0;
@@ -517,13 +539,19 @@ h3.authors {
 	font-weight:bold;
 	color:#333;
 	}
+	
+#content .breadcrumbs a:hover {
+	font-weight:bold;
+	background:#333;
+	color:#fff;
+	}
 
 #content h2.title {
 /*	font:2.0em Arial;
 	color:#7E5B52; */
   	font:1.8em Arial;
 	color:#333;   
-	letter-spacing:-0.05em;
+	letter-spacing:-0.005em;
 	border-bottom:1px solid #ddd;
 	border-top:3px solid #ddd;
 	padding:5px 0px;

@@ -17,7 +17,7 @@
 $values = get_post_custom_values("Image"); echo $values[0]; ?>&w=300&h=275&zc=1&q=100"
 alt="<?php the_title(); ?>" class="left" width="300px" height="275px"  /></a>
 	<?php the_excerpt(); ?>
-	<a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title(); ?>">Lire la suite &raquo;</a>
+	<div class="followup"><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title(); ?>">Lire la suite &raquo;</a></div>
 	<?php endwhile; ?>
 		</div>
 		
@@ -80,7 +80,7 @@ alt="<?php the_title(); ?>" class="left" width="150px" height="150px"  /></a>
       <?php } ?>
 
     <?php the_excerpt(); ?>
-	<a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title(); ?>">Lire la suite &raquo;</a>
+	<div class="followup"><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title(); ?>">Lire la suite &raquo;</a></div>
 	</div>
 
 	</div>
