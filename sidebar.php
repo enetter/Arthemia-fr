@@ -33,7 +33,16 @@
 </div>
 
 <div id="sidebar-bottom"> 
-<?php 	/* Widgetized sidebar, if you have the plugin installed. */ 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(4) ) : ?> 		
+<?php 	/* Widgetized sidebar, if you have the plugin installed. */ 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(4) ) : ?> 
+<h3>Tags</h3><div class="tags">	
+<?php
+$tags = get_tags( array('orderby' => 'count', 'order' => 'DESC') );
+foreach ( (array) $tags as $tag ) {
+?>
+
+<?php echo '<a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . '</a>&nbsp; ';	?>
+<?php		}
+?>  </div>
 <?php endif; ?> </div>   
 
 

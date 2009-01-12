@@ -96,7 +96,6 @@ select {
 	font-size:0.7em;
 	background:#fff;
 	background-image: url(images/bois01.jpg);
-	background-attachment:fixed;
 	}
 
 
@@ -521,6 +520,11 @@ h3.authors {
 #headline p, #featured p {
 	margin:0;
 	}
+	
+.tags a{
+	font-size:1.3em;
+
+}
 
 
 /* Content Page*/
