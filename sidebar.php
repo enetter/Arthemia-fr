@@ -3,6 +3,20 @@
 <?php /* <div id="sidebar-ads">
 <img src="<?php echo get_option('home'); ?>/wp-content/themes/arthemia/images/banners/square.jpg" alt="" width="300px" height="250px" /> </div>*/ ?>
 
+<div id="sidebar-ads">
+<h3>Liens commerciaux</h3>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6813671764273736";
+/* 300x250, date de création 12/01/09 */
+google_ad_slot = "2879444876";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
 
   
 <div id="sidebar-top"> 
