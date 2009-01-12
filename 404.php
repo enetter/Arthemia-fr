@@ -4,12 +4,12 @@
 
 	<div class="post">
 
-	<span class="breadcrumbs"><a href="<?php echo get_option('home'); ?>/">Home</a> &raquo; 404 Not Found</span>
+	<span class="breadcrumbs"><a href="<?php echo get_option('home'); ?>/">Accueil</a> &raquo; Page non trouv&eacute; !</span>
 
-	<h2 class="title">Error 404 - Not Found</h2>
+	<h2 class="title">Page non trouv&eacute;</h2>
 
 		<div class="entry clearfloat">
-		<p>Ooops, I cannot find you the page you are looking for. You may try to search my site another keyword or use the navigation on your right to browse my site.</p>
+		<p>D&eacute;sol&eacute;, je ne trouve pas la page que vous demandez. Essayez la recherche ou la barre de navigation situ&eacute;es au-dessus de ce texte.</p>
 		
 		</div>
 
