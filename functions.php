@@ -26,7 +26,7 @@ global $post;
 		$text = apply_filters('the_content', $text);
 		$text = str_replace(']]>', ']]&gt;', $text);
 		$text = strip_tags($text);
-		$excerpt_length = apply_filters('excerpt_length', 90);
+		$excerpt_length = apply_filters('excerpt_length', 80);
 		$words = explode(' ', $text, $excerpt_length + 1);
 		if (count($words) > $excerpt_length) {
 			array_pop($words);
