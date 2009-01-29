@@ -110,10 +110,10 @@ function afr_page (){
 
     			<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
 
-						<h2><?php echo $themename; ?> Options</h2>
+						<h2>Options <?php echo $themename; ?></h2>
 
-						<?php if ( $_REQUEST['saved'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning">Les options d'<?php echo $themename; ?>ont &eacute;t&eacute; mises &agrave; jour !</div><?php } ?>
-						<?php if ( $_REQUEST['reset'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning">Les options d'<?php echo $themename; ?>ont &eacute;t&eacute; r&eacute;initialis&eacute;es !</div><?php } ?>						
+						<?php if ( $_REQUEST['saved'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning">Les options d'<?php echo $themename; ?> ont &eacute;t&eacute; mises &agrave; jour !</div><?php } ?>
+						<?php if ( $_REQUEST['reset'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning">Les options d'<?php echo $themename; ?> ont &eacute;t&eacute; r&eacute;initialis&eacute;es !</div><?php } ?>						
 						
 					
 						

@@ -6,7 +6,7 @@
 	
 		<div id="headline"><div id="headers">A la une</div>
 	
-		<?php query_posts("showposts=1&cat='53'"); ?>
+		<?php query_posts("showposts=1&cat='".get_option('afr_cat_a_la_une')."'"); ?>
 		<?php while (have_posts()) : the_post(); ?>	
 	
 	<div class="title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></div>
@@ -24,7 +24,7 @@ alt="<?php the_title(); ?>" class="left" width="300px" height="275px"  /></a>
 	<div id="featured">
 	<div id="headers">A l'affiche</div>
 
-	<?php query_posts("showposts=4&cat='54'"); $i = 1; ?>
+	<?php query_posts("showposts=4&cat='".get_option('afr_cat_a_l_affiche')."'"); $i = 1; ?>
 
 		
       	<?php while (have_posts()) : the_post(); ?>
@@ -37,7 +37,7 @@ $values = get_post_custom_values("Image"); echo $values[0]; ?>&w=100&h=65&zc=1&q
 alt="<?php the_title(); ?>" class="left" width="100px" height="65px"  /></a>
       <?php } ?>
 	<div class="info"><a href="<?php the_permalink() ?>" rel="bookmark" class="title"><?php the_title(); ?></a>
-<div class="meta">[<?php the_time('j M Y') ?> | <?php comments_popup_link('Pas de commentaires', 'Un commentaire', '% commentaires');?>]</div>	
+<div class="meta">[<?php the_time('j M Y') ?> | <?php comments_popup_link('Pas de commentaires', 'Un commentaire', '% commentaires'); ?><?php if(get_option('afr_stats')) { if(function_exists('the_views')) { " | ".the_views(); }} ?>]</div>	
 	
 </div>
     	</div>
@@ -61,7 +61,7 @@ alt="<?php the_title(); ?>" class="left" width="100px" height="65px"  /></a>
 	
 	<?php
       $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      query_posts("cat=-53,-54&paged=$page&posts_per_page=5"); ?>
+      query_posts("cat=-".get_option('afr_cat_a_la_une').",-".get_option('afr_cat_a_l_affiche')."&paged=$page&posts_per_page=5"); ?>
 	
 	<?php while (have_posts()) : the_post(); ?>		
 

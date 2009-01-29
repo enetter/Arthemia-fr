@@ -9,13 +9,13 @@ $options = array();
 global $options;
 
 $GLOBALS['template_path'] = get_bloginfo('template_directory');
-
+/*
 $layout_path = TEMPLATEPATH . '/layouts/'; 
 $layouts = array();
-
+*/
 $alt_stylesheet_path = TEMPLATEPATH . '/styles/';
 $alt_stylesheets = array();
-
+/*
 $ads_path = TEMPLATEPATH . '/images/ads/';
 $ads = array();
 
@@ -24,6 +24,19 @@ $woo_categories = array();
 
 $woo_pages_obj = get_pages('sort_column=post_parent,menu_order');
 $woo_pages = array();
+*/
+
+if ( is_dir($alt_stylesheet_path) ) {
+	if ($alt_stylesheet_dir = opendir($alt_stylesheet_path) ) { 
+		while ( ($alt_stylesheet_file = readdir($alt_stylesheet_dir)) !== false ) {
+			if(stristr($alt_stylesheet_file, ".css") !== false) {
+				$alt_stylesheets[] = $alt_stylesheet_file;
+			}
+		}	
+	}
+}	
+
+
 /*
 if ( is_dir($layout_path) ) {
 	if ($layout_dir = opendir($layout_path) ) { 
@@ -35,15 +48,6 @@ if ( is_dir($layout_path) ) {
 	}
 }	
 
-if ( is_dir($alt_stylesheet_path) ) {
-	if ($alt_stylesheet_dir = opendir($alt_stylesheet_path) ) { 
-		while ( ($alt_stylesheet_file = readdir($alt_stylesheet_dir)) !== false ) {
-			if(stristr($alt_stylesheet_file, ".css") !== false) {
-				$alt_stylesheets[] = $alt_stylesheet_file;
-			}
-		}	
-	}
-}	
 
 if ( is_dir($ads_path) ) {
 	if ($ads_dir = opendir($ads_path) ) { 
