@@ -41,7 +41,7 @@ function afr_add_admin() {
 
 	}
 
-add_menu_page("Options ".$themename,"Options ".$themename, 'edit_themes', basename(__FILE__), 'afr_page');
+add_theme_page("Options ".$themename,"Options ".$themename, 'edit_themes', basename(__FILE__), 'afr_page');
 
 }
 ?>

@@ -36,6 +36,24 @@ function custom_trim_excerpt($text) { // Fakes an excerpt if needed
 	return $text;
 }
 
+function custom_views() {
+	$lect = "";
+	if(function_exists('the_views')) {
+		if (the_views() <> "") { 
+			$lect = the_views(false); 
+		}
+	}
+	return $lect;
+}
+
+function custom_time_comments_views() {
+// Gestion de l'affichage de la date, du nb de commentaires et du nb de lectures 
+// si l'utilisateur a coché l'option
+
+?>[<?php the_time('j M Y'); ?> | <?php comments_popup_link('Pas de commentaires', 'Un commentaire', '% commentaires'); ?><?php custom_views(); ?>]
+<?php 
+}
+
 
 ////////////////////////////////
 
@@ -96,7 +114,7 @@ function afr_add_admin() {
 
 	}
 
-add_menu_page("Options ".$themename, "Options ".$themename, 'edit_themes', basename(__FILE__), 'afr_page');
+add_theme_page("Options ".$themename, "Options ".$themename, 'edit_themes', basename(__FILE__), 'afr_page');
 
 }
 
@@ -272,7 +290,7 @@ function afr_wp_head() {
      if ($style != '') {
           ?> <link href="<?php bloginfo('template_directory'); ?>/styles/<?php echo $style; ?>.css" rel="stylesheet" type="text/css" /><?php 
      } else { 
-          $stylesheet = get_option('woo_alt_stylesheet');
+          $stylesheet = get_option('afr_stylesheet');
           if($stylesheet != ''){
                ?><link href="<?php bloginfo('template_directory'); ?>/styles/<?php echo $stylesheet; ?>" rel="stylesheet" type="text/css" /><?php         
           }

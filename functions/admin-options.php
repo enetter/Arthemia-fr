@@ -48,13 +48,6 @@ $options[] = array(	"name" => "Pages à exclure",
 					"id" => $shortname."_menupages",
 					"std" => "",
 					"type" => "text");
-					
-				
-$options[] = array(	"name" => "Afficher les statistiques ?",
-					"desc" => "Cochez cette case si vous souhaitez affichez le nombre de commentaires et de pages vues sur les articles.",
-					"id" => $shortname."_stats",
-					"std" => "true",
-					"type" => "checkbox");	
 
 $options[] = array(	"name" => "Liens commerciaux",
 					"type" => "heading");

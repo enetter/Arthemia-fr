@@ -16,8 +16,8 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 
-<link rel="icon" href="<?php echo get_option('home'); ?>/wp-content/themes/arthemia-fr/images/favicon.ico" />
-<link rel="shortcut icon" href="<?php echo get_option('home'); ?>/wp-content/themes/arthemia-fr/images/favicon.ico" />
+<link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 
 <?php wp_head(); ?>
 
@@ -32,7 +32,7 @@
 		</ul>
 	</div>
 </div>
-<div id="head" class="clearfloat" style="background-image:url(<?php echo get_option('afr_logo'); ?>)">
+<?php if(get_option('afr_logo')<>""): ?><div id="head" class="clearfloat" style="background-image:url(<?php echo get_option('afr_logo'); ?>)"><?php else: ?><div id="head" class="clearfloat" style="background-image:url(<?php bloginfo('template_directory'); ?>/images/logo.png)"><?php endif; ?>
 
 <div class="clearfloat">
 	<div id="logo" class="left">

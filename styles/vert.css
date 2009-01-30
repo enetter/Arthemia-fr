@@ -1,8 +1,8 @@
 /*  
 Theme Name: Arthemia-fr
 Theme URI: http://code.google.com/p/arthemia-fr/
-Description: <a href="http://code.google.com/p/arthemia-fr/">Arthemia-fr</a> combine les styles magazine et blog en un seul thème. Conçu pour Wordpress, il intègre le support des gravatars et la génération automatique des imagettes. Il est basé sur le <a href="http://michaelhutagalung.com/2008/05/arthemia-magazine-blog-wordpress-theme-released/">thème Arthemia</a> par <a href="http://michaelhutagalung.com/">Michael Hutagalung</a> et lui ajoute des fonctions d'administration pour paramétrer le thème. 
-Version: 0.6.0
+Description: <a href="http://code.google.com/p/arthemia-fr/">Arthemia-fr</a> combine les styles magazine et blog en un seul thème. Conçu pour Wordpress, il intègre le support des gravatars et la génération automatique des imagettes. Il est basé sur le <a href="http://michaelhutagalung.com/2008/05/arthemia-magazine-blog-wordpress-theme-released/">thème Arthemia</a> par <a href="http://michaelhutagalung.com/">Michael Hutagalung</a>. 
+Version: 0.5
 Author: Emmanuel Netter
 Author URI: http://www.cplusn.com/
 
@@ -29,14 +29,14 @@ p {
 	}
 
 a:link, a:visited {
-	color: #905F51;
+	color: #124811;
 
 	text-decoration:none
 	}
 
 a:hover, a:active {
 	color:#fff;
-	background: #905F51;
+	background: #124811;
 	/*text-decoration:underline;*/
 	}
 
@@ -183,7 +183,7 @@ text-decoration: none;
 	}
 
 #page-bar li:hover {
-	background: #7E5B52;
+	background: #124811;
 	}
 
 
@@ -438,10 +438,10 @@ h3.authors {
 	text-decoration:none;
 	}
 
-#cat-1:hover, #cat-3:hover, #cat-5:hover {background:#333333; color:#fff; }
+/* #cat-1:hover, #cat-3:hover, #cat-5:hover {background:#333333; color:#fff; }
 #cat-2:hover, #cat-4:hover {background:#7E5B52; color:#fff; }
 #cat-1:hover a, #cat-3:hover a, #cat-5:hover a {background:#333333; color:#fff; }
-#cat-2:hover a, #cat-4:hover a {background:#7E5B52; color:#fff; }
+#cat-2:hover a, #cat-4:hover a {background:#7E5B52; color:#fff; } */
 
 #bottom {
 	width: 940px;
@@ -478,7 +478,7 @@ h3.authors {
 	}
 	
 #front-list .title a:hover, #front-list .followup a:hover{
-	background:#905F51;
+	background:#124811;
 	color:#fff; 
 }
 
@@ -887,7 +887,7 @@ li.my_comment cite strong {
 	}
 
 #recentpost ul li:hover, #mostcommented ul li:hover, #recent_comments ul li:hover {
-	background: #905F51;;
+	background: #124811;;
 	color:#fff;
 	}
 

@@ -10,7 +10,7 @@
 		<?php while (have_posts()) : the_post(); ?>	
 	
 	<div class="title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></div>
-	<div class="meta">[<?php the_time('j M Y') ?> | <?php comments_popup_link('Pas de commentaires', 'Un commentaire', '% commentaires');?>]</div>	
+	<div class="meta"><? echo custom_time_comments_views() ?></div>	
 	<?php $values = get_post_custom_values("Headline");?>
  	<a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title(); ?>">
 <img src="<?php echo bloginfo('template_url'); ?>/scripts/timthumb.php?src=/<?php
@@ -37,7 +37,7 @@ $values = get_post_custom_values("Image"); echo $values[0]; ?>&w=100&h=65&zc=1&q
 alt="<?php the_title(); ?>" class="left" width="100px" height="65px"  /></a>
       <?php } ?>
 	<div class="info"><a href="<?php the_permalink() ?>" rel="bookmark" class="title"><?php the_title(); ?></a>
-<div class="meta">[<?php the_time('j M Y') ?> | <?php comments_popup_link('Pas de commentaires', 'Un commentaire', '% commentaires'); ?><?php if(get_option('afr_stats')) { if(function_exists('the_views')) { " | ".the_views(); }} ?>]</div>	
+<div class="meta"><? echo custom_time_comments_views() ?></div>	
 	
 </div>
     	</div>
@@ -68,7 +68,7 @@ alt="<?php the_title(); ?>" class="left" width="100px" height="65px"  /></a>
 	<div class="clearfloat">
 	<h3 class=cat_title><?php the_category(', '); ?> &raquo</h3>
 	<div class="title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></div>
-	<div class="meta">[<?php the_time('j M Y') ?> | <?php comments_popup_link('Pas de commentaires', 'Un commentaire', '% commentaires');?>]</div>	
+	<div class="meta"><? custom_time_comments_views() ?></div>	
 	
 	<div class="spoiler">
 	<?php	$values = get_post_custom_values("Image");

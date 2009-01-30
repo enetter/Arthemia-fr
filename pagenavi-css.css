@@ -20,16 +20,16 @@
 	padding: 2px 4px 2px 4px; 
 	margin: 2px;
 	text-decoration: none;
-	border: 1px solid #7E5B52;
-	color: #7E5B52;
+	border: 1px solid #303030;
+	color: #303030;
 	background-color: #FFFFFF;	
 }
 .wp-pagenavi a:visited {
 	padding: 2px 4px 2px 4px; 
 	margin: 2px;
 	text-decoration: none;
-	border: 1px solid #7E5B52;
-	color: #7E5B52;
+	border: 1px solid #303030;
+	color: #303030;
 	background-color: #FFFFFF;	
 }
 .wp-pagenavi a:hover {	
@@ -41,8 +41,8 @@
 	padding: 2px 4px 2px 4px; 
 	margin: 2px;
 	text-decoration: none;
-	border: 1px solid #7E5B52;
-	color: #7E5B52;
+	border: 1px solid #303030;
+	color: #303030;
 	background-color: #FFFFFF;	
 }
 .wp-pagenavi span.pages {
