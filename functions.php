@@ -293,7 +293,9 @@ function afr_wp_head() {
           $stylesheet = get_option('afr_stylesheet');
           if($stylesheet != ''){
                ?><link href="<?php bloginfo('template_directory'); ?>/styles/<?php echo $stylesheet; ?>" rel="stylesheet" type="text/css" /><?php         
-          }
+          } else {
+			?> <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" /><?php 
+                 }
      }     
 }
 
