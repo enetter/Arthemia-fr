@@ -21,7 +21,7 @@
 	<?php	$values = get_post_custom_values("Image");
 	if (isset($values[0])) { ?>
       <a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title(); ?>">
-	<img src="<?php echo bloginfo('template_url'); ?>/scripts/timthumb.php?src=/<?php
+	<img src="<?php echo bloginfo('template_url'); ?>/scripts/timthumb.php?src=<?php
 $values = get_post_custom_values("Image"); echo $values[0]; ?>&w=150&h=150&zc=1&q=100"
 alt="<?php the_title(); ?>" class="left" width="150px" height="150px"  /></a>
       <?php } ?>
