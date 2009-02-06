@@ -16,13 +16,6 @@
 </div>
 
 <div id="recent_comments" class="clearfloat">
-<?php if (function_exists('get_most_viewed')): ?>
-<h3>Articles les plus lus</h3>
-<ul>
-   <?php get_most_viewed('post',5); ?>
-</ul>
-<?php endif; ?>
-
 <?php 	/* Widgetized sidebar, if you have the plugin installed. */ 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(7) ) : ?> 
 <?php endif; ?>
 </div>
