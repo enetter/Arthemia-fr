@@ -61,7 +61,7 @@ alt="<?php the_title(); ?>" class="left" width="100px" height="65px"  /></a>
 	
 	<?php
       $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      query_posts("cat=-".get_option('afr_cat_a_la_une').",-".get_option('afr_cat_a_l_affiche')."&paged=$page&posts_per_page=5"); ?>
+      query_posts("cat=-".get_option('afr_cat_a_la_une').",-".get_option('afr_cat_a_l_affiche')."&paged=$page&posts_per_page=.get_option('posts_per_page')"); ?>
 	
 	<?php while (have_posts()) : the_post(); ?>		
 
