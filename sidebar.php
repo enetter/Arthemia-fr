@@ -42,7 +42,7 @@ $tags = get_tags( array('orderby' => 'count', 'order' => 'DESC') );
 foreach ( (array) $tags as $tag ) {
 ?>
 
-<?php echo '<a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . '</a>&nbsp; ';	?>
+<?php echo '<a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' .'<strong>'.ucfirst(substr($tag->name,0,1)).'</strong>'.substr($tag->name,(strlen($tag->name)-1)*-1). '</a>&nbsp; ';	?>
 <?php		}
 ?>  </div>
 <?php endif; ?> </div>   
