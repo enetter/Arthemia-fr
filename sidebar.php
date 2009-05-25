@@ -38,7 +38,7 @@
 <?php 	/* Widgetized sidebar, if you have the plugin installed. */ 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(4) ) : ?> 
 <h3>Tags</h3><div class="tags">	
 <?php
-$tags = get_tags( array('orderby' => 'count', 'order' => 'DESC') );
+$tags = get_tags(array('orderby' => 'name', 'order' => 'ASC') );
 foreach ( (array) $tags as $tag ) {
 ?>
 

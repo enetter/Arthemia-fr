@@ -39,7 +39,7 @@ $isByAuthor = true;
 	
 
 			<div class="commenttext">
-			<cite><strong><?php comment_author_link() ?> <?php if($isByAuthor ) { echo '(author)';} ?> </strong> a dit: </cite>
+			<cite><strong><a href="<?php comment_author_url(); ?>" target="_blank"> <?php comment_author(); ?></a></strong> a dit: </cite>
 
 			<?php if ($comment->comment_approved == '0') : ?>
 			<em>Votre commentaire est en attente de mod&eacute;ration.</em>

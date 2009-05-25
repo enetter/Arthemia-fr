@@ -25,11 +25,11 @@
 	<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 	
 	</div>
-
+	<div class="entry clearfloat">
+		<div class="breadcrumbs"><p><?php the_tags('Tags : ',', '); ?></p></div>
+	</div>
 	<div id="tools">
-
-
-	<div style="float:right;display:block;"><?php if(function_exists('the_ratings')) { the_ratings(); } ?></div>
+		<div style="float:right;display:block;"><?php if(function_exists('the_ratings')) { the_ratings(); } ?></div>	
 	</div>
 
 	</div>
